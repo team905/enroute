@@ -20,7 +20,6 @@ app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'static')));
 const staticPath = path.join(__dirname, 'static/pdf');
 
-
 // Define a route for the homepage
 app.get('/', (req, res) => {
   // Render the 'index.pug' template and pass data if needed
