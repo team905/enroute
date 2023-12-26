@@ -1,0 +1,2301 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zxx">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Enroute - Explore The journeys</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/IMG-20230804-WA0008 (2).jpg">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!--Custom CSS-->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!--Flaticons CSS-->
+    <link href="font/flaticon.css" rel="stylesheet" type="text/css">
+    <!--Plugin CSS-->
+    <link href="css/plugin.css" rel="stylesheet" type="text/css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .font18 {
+            font-size: 18px;
+        }
+
+        span.deal-price {
+            width: 120px !important;
+        }
+
+        .deals-on-sale .slick-slide h3,
+        .deals-on-sale .slick-slide p {
+            text-shadow: 2px 2px #ff0000;
+        }
+
+        .sale-overlay {
+
+            width: 75%;
+            background: linear-gradient(to right, #040404c7 1%, #ffad0000 60%);
+        }
+
+        .ad-price-inner {
+            height: 250px;
+            width: 250px;
+            border: 1px dashed #fff;
+            border-radius: 50%;
+            padding: 60px 0;
+            background: #99062f;
+        }
+
+        .deals-on-sale .slick-slide {
+            max-height: 475px !important;
+            min-height: 475px !important;
+        }
+
+        @media only screen and (min-width: 600px) {
+            .navbar.navbar-default.navbar-sticky-function {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+
+            .deals-on-sale .slick-slide {
+                max-height: 475px !important;
+                min-height: 475px !important;
+            }
+
+            /* .popular-packages .slick-slide {
+                max-height: 400px !important;
+                min-height: 400px !important;
+            } */
+        }
+
+        @media (max-width: 500px) {
+            .search-box {
+                padding-top: 8px;
+                display: none;
+            }
+        }
+
+        @media (max-width: 500px) {
+            section.popular-packages {
+                padding-top: 30px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- Preloader -->
+    <!-- <div id="preloader">
+        <div id="status"></div>
+    </div> -->
+    <!-- Preloader Ends -->
+
+    <!-- Header -->
+    <header>
+        <div class="upper-head clearfix">
+            <div class="container">
+                <div class="contact-info">
+                    <p><i class="fa fa-phone"></i> Phone: <a style="color: white;" href="tel:7447557691">
+                            (091)-7447557691</a></p>
+                    <p><i class="fa fa-envelope"></i> Mail: <a style="color: white;"
+                            href="mailto:shivam@enroute-tours.com">shivam@enroute-tours.com</a> </p>
+                </div>
+                <div class="login-btn pull-right">
+                    <a href="#"><i class="fa fa-user-plus"></i> Register</a>
+                    <a href="#"><i class="fa fa-unlock-alt"></i> Login</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Ends -->
+
+    <!-- Navigation Bar -->
+    <div class="navigation">
+        <div class="container">
+            <div class="navigation-content">
+                <div class="header_menu">
+                    <!-- start Navbar (Header) -->
+                    <nav class="navbar navbar-default navbar-sticky-function navbar-arrow">
+
+                        <div class=" pull-left" style="display: flex !important;">
+                            <!-- <a href="/home"><img alt="Image" src="images/Yatra-01.png"></a> -->
+                            <a href="/"><img width="175" height="60" alt="Image"
+                                    src="images/IMG-20230804-WA0008 (2).jpg"></a>
+                            <a href="/"><img width="175" height="60" alt="Image" src="images/enroute.jpg"></a>
+                        </div>
+                        <div id="navbar" class="navbar-nav-wrapper">
+                            <ul class="nav navbar-nav" id="responsive-menu">
+                                <li class="active">
+                                    <a href="/">Home <i class="fa fa-angle-down"></i></a>
+                                    <!-- <ul>
+                                        <li><a href="#">Travel</a>
+                                            <ul>
+                                                <li><a href="/home">Home Slider</a></li>
+                                                <li><a href="index-banner.html">Home Banner</a></li>
+                                                <li><a href="index-video.html">Home Video</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="index-1.html">Travel Style 2</a></li>
+                                        <li><a href="index-2.html">Travel Style 3</a></li>
+                                        <li><a href="index-3.html">Travel style 4</a></li>
+                                        <li><a href="index-4.html">Travel New</a></li>
+                                    </ul> -->
+                                </li>
+                                <!-- <li>
+                                    <a href="#">Pages <i class="fa fa-angle-down"></i></a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Destination</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Grid View</a>
+                                                    <ul>
+                                                        <li><a href="destination-2col.html">Grid View 2 Col</a></li>
+                                                        <li><a href="destination-3col.html">Grid View 3 Col</a></li>
+                                                        <li><a href="destination-4col.html">Grid View 4 Col</a></li>
+                                                        <li><a href="destination-sidebar.html">Grid with sidebar</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">List View</a>
+                                                    <ul>
+                                                        <li><a href="destination-fullwidth.html">List no sidebar</a>
+                                                        </li>
+                                                        <li><a href="destination-list-sidebar.html">List with
+                                                                sidebar</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="tour-detail.html">Detail Default</a>
+                                            <ul>
+                                                <li><a href="tour-detail.html">Detail Default</a></li>
+                                                <li><a href="detail-tabs.html">Detail Tabs</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="booking.html">Booking & Payment</a>
+                                            <ul>
+                                                <li><a href="booking.html">Booking Page</a></li>
+                                                <li><a href="booking-confirmation.html">Booking Confirmation</a></li>
+                                                <li><a href="payment.html">Payment Page</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="price-list.html">Price List</a></li>
+                                        <li><a href="error.html">Error Page</a></li>
+                                        <li><a href="aboutus.html">About Page</a></li>
+                                        <li><a href="contactus.html">Contact Us</a></li>
+                                    </ul>
+                                </li> -->
+                                <li>
+                                    <a href="#">Hotel <i class="fa fa-angle-down"></i></a>
+                                    <!-- <ul>
+                                        <li> <a href="hotel.html">Hotel Homepage</a></li>
+                                        <li> <a href="grid-view.html">Grid View</a></li>
+                                        <li><a href="list-view.html">List View</a></li>
+                                        <li><a href="hotel-detail.html">Detail Page</a></li>
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="#">Flights<i class="fa fa-angle-down"></i></a>
+                                    <!-- <ul>
+                                        <li> <a href="flight.html">Flight Homepage</a></li>
+                                        <li> <a href="flight-grid-view.html">Grid View</a></li>
+                                        <li><a href="flight-list-view.html">List View</a></li>
+                                        <li><a href="flight-detail.html">Detail Page</a></li>
+                                        <li><a href="flight-booking.html">Booking</a></li>
+                                        <li><a href="flight-confirm.html">Thank You</a></li>
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-star"></i> Cars<i class="fa fa-angle-down"></i></a>
+                                    <!-- <ul>
+                                        <li> <a href="car-grid-view.html">Car Grid View</a></li>
+                                        <li><a href="car-list-view.html">Car List View</a></li>
+                                        <li><a href="car-detail.html">Car Detail Page</a></li>
+                                        <li><a href="car-booking.html">Payment</a></li>
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-star"></i> Train<i class="fa fa-angle-down"></i></a>
+                                    <!-- <ul>
+                                        <li> <a href="cruise-grid-view.html">Cruise Grid View</a></li>
+                                        <li><a href="cruise-list-view.html">Cruise List View</a></li>
+                                        <li><a href="cruise-detail.html">Cruise Detail Page</a></li>
+                                        <li><a href="cruise-booking.html">Payment</a></li>
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="#">Cruise <i class="fa fa-angle-down"></i></a>
+                                    <!-- <ul>
+                                        <li><a href="dashboard.html">Dashboard</a></li>
+                                        <li><a href="dashboard-my-profile.html">Dashboard Profile</a></li>
+                                        <li><a href="dashboard-booking.html">Dashboard Bookings</a></li>
+                                        <li><a href="dashboard-history.html">Dashboard History</a></li>
+                                        <li><a href="dashboard-list.html">Dashboard Listing</a></li>
+                                        <li><a href="dashboard-addtour.html">Dashboard Add Tour</a></li>
+                                        <li><a href="dashboard-reviews.html">Dashboard Reviews</a></li>
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-star"></i> Services <i class="fa fa-angle-down"></i></a>
+                                    <ul>
+                                        <li><a>VISA Services</a></li>
+                                        <li><a>Travel Insurance</a></li>
+                                        <li><a>Passport Assistance</a></li>
+                                        <li><a>Train Bookings</a></li>
+                                        <li><a>Flight Bookings</a></li>
+                                        <li><a>Car Rentals</a></li>
+                                        <li><a>Hotel Bookings</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Shop <i class="fa fa-angle-down"></i></a>
+                                    <!-- <ul>
+                                        <li><a href="blog-list.html">Blog Right Sidebar</a></li>
+                                        <li><a href="blog-list-1.html">Blog Left Sidebar</a></li>
+                                        <li><a href="blog-list-2.html">Blog Fullwidth</a></li>
+                                        <li><a href="blog-list-3.html">Blog List</a></li>
+                                        <li><a href="blog-grid.html">Blog Grid</a></li>
+                                        <li><a href="blog-detail.html">Blog Detail Right Sidebar</a></li>
+                                        <li><a href="blog-detail-fw.html">Blog Detail Fullwidth</a></li>
+                                    </ul> -->
+                                </li>
+                            </ul>
+                        </div><!--/.nav-collapse -->
+                        <div id="slicknav-mobile"></div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navigation Bar Ends -->
+
+    <div class="modal fade" id="successModal2" tabindex="-1" role="dialog" aria-labelledby="successModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="successModalLabel">Success</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Thank You for Subscribing to Enroute!.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banner start -->
+    <section class="swiper-banner">
+        <div class="slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(images/slider/slider9-1.jpg)">
+                        <div class="swiper-content" data-animation="animated fadeInUp">
+                            <h2>Cost friendly packages on your way</h2>
+                            <h1>Ladakh Delights 9 days tour</h1>
+                            <a href="#ladakhEscapes" class="btn-blue btn-red">View Our Tours</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide" style="background-image:url(images/slider/home-kerala.jpg)">
+                        <div class="swiper-content" data-animation="animated fadeInUp">
+                            <h2>Cost friendly packages on your way</h2>
+                            <h1>Kerala Delights 8 days tour</h1>
+                            <a href="#keralaEscapes" class="btn-blue btn-red">View Our Tours</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide" style="background-image:url(images/slider/home-meghalaya.png)">
+                        <div class="swiper-content" data-animation="animated fadeInUp">
+                            <h2>Cost friendly packages on your way</h2>
+                            <h1>North East Delights 7 days tour</h1>
+                            <a href="#northeastEscapes" class="btn-blue btn-red">View Our Tours</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide" style="background-image:url(images/slider/slider7.jpeg)">
+                        <div class="swiper-content" data-animation="animated fadeInDown">
+                            <h2>Book a ticket & Just Leave</h2>
+                            <h1>Search your next destination</h1>
+                            <a href="#ladakhEscapes" class="btn-blue btn-red">View Our Tours</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(images/slider/slider6.jpg);background-position: center;
+                    background-repeat: no-repeat;">
+                        <div class="swiper-content" data-animation="animated fadeInRight">
+                            <h2>Exciting schemes just a click away</h2>
+                            <h1>We offer you better deals</h1>
+                            <a href="#keralaEscapes" class="btn-blue btn-red">View Our Tours</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="overlay"></div>
+        </div>
+    </section>
+    <!-- Banner Ends -->
+
+
+    <!-- Search Box -->
+    <div class="search-box clearfix">
+        <div class="container">
+            <div class="search-outer">
+                <div class="search-content">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-3 col-xs-6">
+                                <div class="search-ad">
+                                    <p>Find Your <span>Holiday</span></p>
+                                    <i class="flaticon-sun-umbrella "></i>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-xs-6">
+                                <div class="table_item">
+                                    <div class="form-group">
+                                        <select id="custom-select-1" class="selectpicker form-control">
+                                            <option disabled selected value="0">Destination</option>
+                                            <option value="1">Leh</option>
+                                            <option value="2">Ladakh</option>
+                                            <option value="3">Rajasthan</option>
+                                            <option value="4">Goa</option>
+                                            <option value="5">Nashik</option>
+                                        </select>
+
+                                        <i class="flaticon-maps-and-flags"></i>
+                                    </div>
+                                    <div class="form-group  form-icon">
+                                        <select name="custom-select-2" class="selectpicker form-control" tabindex="1">
+                                            <option disabled selected value="0">Type</option>
+                                            <option value="1">Group</option>
+                                            <option value="2">Couple</option>
+                                            <option value="3">Dometic</option>
+                                            <option value="4">International</option>
+                                            <option value="5">Outings</option>
+                                        </select>
+                                        <i class="flaticon-box"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-xs-6">
+                                <div class="table_item">
+                                    <div class="form-group">
+                                        <div class='input-group date' id='datetimepicker1'>
+                                            <input type='text' class="form-control" value="dd-mm-yyyy" />
+                                            <i class="flaticon-calendar"></i>
+                                            <span class="input-group-addon">
+                                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-icon">
+                                        <div class='input-group date' id='datetimepicker2'>
+                                            <input type='text' class="form-control" value="dd-mm-yyyy" />
+                                            <i class="flaticon-calendar"></i>
+                                            <span class="input-group-addon">
+                                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-xs-6">
+                                <div class="table_item table-item-slider">
+                                    <div class="range-slider">
+                                        <div data-min="0" data-max="50000" data-unit="rs" data-min-name="min_price"
+                                            data-max-name="max_price"
+                                            class="range-slider-ui ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
+                                            aria-disabled="false">
+                                            <span class="min-value"><span class="fa fa-inr"></span> 0</span>
+                                            <span class="max-value"><span class="fa fa-inr"></span> 50,000</span>
+                                            <div class="ui-slider-range ui-widget-header ui-corner-all"
+                                                style="left: 0%; width: 100%;"></div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="search">
+                                        <a href="#" class="btn-blue btn-red">SEARCH</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Search Box Ends -->
+
+    <!-- Popular Packages -->
+    <section class="popular-packages" id="ladakhEscapes">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>MYSTIC LADAKH ESCAPES</h2>
+                <div class="section-icon">
+                    <i class="flaticon-diamond"></i>
+                </div>
+                <p>“I have found out that there ain’t no surer way to find out whether you like people or hate them than
+                    to travel with them.” – Mark Twain</p>
+            </div>
+            <div class="row package-slider slider-button">
+                <div class="col-sm-4">
+                    <div class="package-item">
+                        <div class="package-image">
+                            <img src="images/package1.jpeg" alt="Image">
+                            <div class="package-price">
+                                <div class="deal-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star-o"></span>
+                                </div>
+                                <span class="fa fa-inr fa-2x" style="font-size: 1.5em;color:white"></span>
+                                <p><span>28,899</span> / <i class="fa fa-user-o" aria-hidden="true"></i> </p>
+                            </div>
+                        </div>
+                        <div class="package-content">
+                            <h3>Ladakh Magic</h3>
+                            <p class="package-days"><i class="flaticon-time"></i> 6 days</p>
+                            <p>Customisations Available</p>
+                            <p>Leh - Khardung La - Nubra valley - Pangong Tso - Cjang La</p>
+                            <div class="package-info">
+                                <a href="tour-detail2" class="btn-blue btn-red">View more details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="package-item">
+                        <div class="package-image">
+                            <img src="images/leh2.jpeg" alt="Image">
+                            <div class="package-price">
+                                <div class="deal-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star-o"></span>
+                                </div>
+                                <span class="fa fa-inr fa-2x" style="font-size: 1.5em;color:white"></span>
+                                <p><span>34,899</span> / <i class="fa fa-user-o" aria-hidden="true"></i> </p>
+                            </div>
+                        </div>
+                        <div class="package-content">
+                            <h3>Ladakh Highlights</h3>
+                            <!-- <p>Travel| Explore | Leh |Ladakh</p> -->
+                            <p class="package-days"><i class="flaticon-time"></i> 7 days</p>
+                            <p>Leh - Khardung La - Nubra valley - Turtuk & Thang - Pangong Tso - Cjang La</p>
+                            <div class="package-info">
+                                <a href="Leh-Ladakh-Delights" class="btn-blue btn-red">View more details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="package-item">
+                        <div class="package-image">
+                            <img src="images/leh3.cms" alt="Image">
+                            <div class="package-price">
+                                <div class="deal-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star-o"></span>
+                                </div>
+                                <span class="fa fa-inr fa-2x" style="font-size: 1.5em;color:white"></span>
+                                <p><span>38,799</span> / <i class="fa fa-user-o" aria-hidden="true"></i> </p>
+                            </div>
+                        </div>
+                        <div class="package-content">
+                            <h3>Ladakh Explorer</h3>
+                            <p class="package-days"><i class="flaticon-time"></i> 8 days</p>
+                            <p>Leh - Khardung La - Nubra valley - Pangong Tso - Cjang La - Lamayuru - Alchi - Kargil -
+                                Drass</p>
+                            <div class="package-info">
+                                <a href="Leh-Ladakh-Delights" class="btn-blue btn-red">View more details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="package-item">
+                        <div class="package-image">
+                            <img src="images/leh7.jpg" alt="leh7">
+                            <div class="package-price">
+                                <div class="deal-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star-o"></span>
+                                </div>
+                                <span class="fa fa-inr fa-2x" style="font-size: 1.5em;color:white"></span>
+                                <p><span>42,299</span> / <i class="fa fa-user-o" aria-hidden="true"></i> </p>
+                            </div>
+                        </div>
+                        <div class="package-content">
+                            <h3>Ladakh Delights</h3>
+                            <p class="package-days"><i class="flaticon-time"></i> 9 days</p>
+                            <p>Leh - Khardung La - Nubra valley - Turtuk & Thang - Pangong Tso - Cjang La - Lamayuru -
+                                Alchi - Kargil - Drass</p>
+                            <div class="package-info">
+                                <a href="Leh-Ladakh-Delights" class="btn-blue btn-red">View more details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="package-item">
+                        <div class="package-image">
+                            <img src="images/leh8.jpg" alt="Image">
+                            <div class="package-price">
+                                <div class="deal-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star-o"></span>
+                                </div>
+                                <span class="fa fa-inr fa-2x" style="font-size: 1.5em;color:white"></span>
+                                <p><span>30,999</span> / <i class="fa fa-user-o" aria-hidden="true"></i> </p>
+                            </div>
+                        </div>
+                        <div class="package-content">
+                            <h3>Ladakh Again</h3>
+                            <p class="package-days"><i class="flaticon-time"></i> 5 days</p>
+                            <p>Leh - Khardung La - Nubra valley - Turtuk & Thang</p>
+                            <div class="package-info">
+                                <a href="Leh-Ladakh-Delights" class="btn-blue btn-red">View more details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="package-item">
+                        <div class="package-image">
+                            <img src="images/leh9.jpg" alt="Image">
+                            <div class="package-price">
+                                <div class="deal-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star-o"></span>
+                                </div>
+                                <span class="fa fa-inr fa-2x" style="font-size: 1.5em;color:white"></span>
+                                <p><span>25,990</span> / <i class="fa fa-user-o" aria-hidden="true"></i> </p>
+                            </div>
+                        </div>
+                        <div class="package-content">
+                            <h3>Ladakh Untouched</h3>
+                            <p class="package-days"><i class="flaticon-time"></i> 8 days</p>
+                            <p>Leh - Khardung La - Nubra valley - Turtuk & Thang - Pangong Tso - Cjang La - Lamayuru -
+                                Alchi </p>
+                            <div class="package-info">
+                                <a href="Leh-Ladakh-Delights" class="btn-blue btn-red">View more details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Popular Packages Ends -->
+
+    <!-- Deals -->
+    <!-- <section class="deals">
+        <div class="container">
+            <div class="section-title section-title-white text-center">
+                <h2>Last Minute Deals</h2>
+                <div class="section-icon">
+                    <i class="flaticon-diamond"></i>
+                </div>
+                <p>Discover a world of unforgettable journeys with Enroute, where we turn your travel dreams into
+                    extraordinary adventures filled with wonder and delight. <i class="fa fa-globe"></i></p>
+            </div>
+            <div class="deals-outer">
+                <div class="row deals-slider slider-button">
+                    <div class="col-md-3">
+                        <div class="deals-item">
+                            <div class="deals-item-outer">
+                                <div class="deals-image">
+                                    <img src="images/rajasthan.jpeg" alt="rajasthan">
+                                    <span class="deal-price"><span class="fa fa-inr fa-2x"
+                                            style="font-size: 1.5em;color:white"></span>9,600</span>
+                                </div>
+                                <div class="deal-content">
+                                    <div class="deal-rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star-o"></span>
+                                        <span class="fa fa-star-o"></span>
+                                    </div>
+                                    <h3>Royal Rajasthan Journey</h3>
+                                    <p>Experience the regal heritage of Rajasthan's palaces and forts.</p>
+                                    <a href="Leh-Ladakh-Delights" class="btn-blue btn-red">More Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="deals-item">
+                            <div class="deals-item-outer">
+                                <div class="deals-image">
+                                    <img src="images/kerela.jpg" alt="kerela">
+                                    <span class="deal-price"><span class="fa fa-inr fa-2x"
+                                            style="font-size: 1.5em;color:white"></span>9,300</span>
+                                </div>
+                                <div class="deal-content">
+                                    <div class="deal-rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star-o"></span>
+                                        <span class="fa fa-star-o"></span>
+                                    </div>
+                                    <h3>Kerala Backwaters Escape</h3>
+                                    <p>Relax on serene backwaters and lush landscapes in Kerala.</p>
+                                    <a href="Leh-Ladakh-Delights" class="btn-blue btn-red">More Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="deals-item">
+                            <div class="deals-item-outer">
+                                <div class="deals-image">
+                                    <img src="images/varanasi.jpeg" alt="varanasi">
+                                    <span class="deal-price"><span class="fa fa-inr fa-2x"
+                                            style="font-size: 1.5em;color:white"></span>9,200</span>
+                                </div>
+                                <div class="deal-content">
+                                    <div class="deal-rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star-o"></span>
+                                        <span class="fa fa-star-o"></span>
+                                    </div>
+                                    <h3>Spiritual Varanasi Discovery</h3>
+                                    <p>Explore the spiritual heart of India on the banks of the Ganges.</p>
+                                    <a href="Leh-Ladakh-Delights" class="btn-blue btn-red">More Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="deals-item">
+                            <div class="deals-item-outer">
+                                <div class="deals-image">
+                                    <img src="images/jaipur.jpg" alt="jaipur">
+                                    <span class="deal-price"><span class="fa fa-inr fa-2x"
+                                            style="font-size: 1.5em;color:white"></span>8,500</span>
+                                </div>
+                                <div class="deal-content">
+                                    <div class="deal-rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star-o"></span>
+                                    </div>
+                                    <h3>Cultural Odyssey in Jaipur</h3>
+                                    <p>Discover the vibrant culture and architecture of the Pink City.</p>
+                                    <a href="Leh-Ladakh-Delights" class="btn-blue btn-red">More Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="deals-item">
+                            <div class="deals-item-outer">
+                                <div class="deals-image">
+                                    <img src="images/himalaya.jpg" alt="himalaya">
+                                    <span class="deal-price"><span class="fa fa-inr fa-2x"
+                                            style="font-size: 1.5em;color:white"></span>9,800</span>
+                                </div>
+                                <div class="deal-content">
+                                    <div class="deal-rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star-o"></span>
+                                    </div>
+                                    <h3>Himalayan Trekking Adventure</h3>
+                                    <p>Trek through the breathtaking landscapes of the Himalayas.</p>
+                                    <a href="Leh-Ladakh-Delights" class="btn-blue btn-red">More Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="deals-item">
+                            <div class="deals-item-outer">
+                                <div class="deals-image">
+                                    <img src="images/Goa.jpg" alt="Goa">
+                                    <span class="deal-price"><span class="fa fa-inr fa-2x"
+                                            style="font-size: 1.5em;color:white"></span>8,900</span>
+                                </div>
+                                <div class="deal-content">
+                                    <div class="deal-rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star-o"></span>
+                                        <span class="fa fa-star-o"></span>
+                                    </div>
+                                    <h3>Goa Beach Bliss</h3>
+                                    <p>Relish sun, sand, and vibrant nightlife on Goa's beautiful beaches.</p>
+                                    <a href="Leh-Ladakh-Delights" class="btn-blue btn-red">More Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-overlay"></div>
+    </section> -->
+    <!-- Deals Ends -->
+
+    <!-- Deals -->
+    <section class="deals" id="keralaEscapes">
+        <div class="container">
+            <div class="section-title section-title-white text-center">
+                <h2>Enchanting Kerala Escapes</h2>
+                <div class="section-icon">
+                    <i class="flaticon-diamond"></i>
+                </div>
+                <p>Discover a world of unforgettable journeys with Enroute, where we turn your travel dreams into
+                    extraordinary adventures filled with wonder and delight. <i class="fa fa-globe"></i></p>
+            </div>
+            <div class="deals-outer">
+                <div class="row deals-slider slider-button">
+
+                    <div class="col-md-3">
+                        <div class="deals-item">
+                            <div class="deals-item-outer">
+                                <div class="deals-image">
+                                    <img src="images/home-kerela-main.jpg" alt="kovalam">
+                                    <span class="deal-price"><span class="fa fa-inr fa-2x"
+                                            style="font-size: 1.5em;color:white"></span>18,500</span>
+                                </div>
+                                <div class="deal-content">
+                                    <div class="deal-rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star-o"></span>
+                                        <span class="fa fa-star-o"></span>
+                                    </div>
+                                    <h3>Enroute Kerala Delights</h3>
+                                    <p> Enchanting Journey Awaits: Immerse in Enroute Kerala Delights for Unforgettable
+                                        Experiences!</p>
+                                    <a href="2-Enroute-Kerala-Delights" class="btn-blue btn-red">More Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="deals-item">
+                            <div class="deals-item-outer">
+                                <div class="deals-image">
+                                    <img src="images/home-kovalam-(2).jpg" alt="kovalam">
+                                    <span class="deal-price"><span class="fa fa-inr fa-2x"
+                                            style="font-size: 1.5em;color:white"></span>20,000</span>
+                                </div>
+                                <div class="deal-content">
+                                    <div class="deal-rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star-o"></span>
+                                        <span class="fa fa-star-o"></span>
+                                    </div>
+                                    <h3>Kerala Delights With Houseboat</h3>
+                                    <p> Experience Kerala's Delights with Our Captivating Houseboat Escapes!</p>
+                                    <a href="2-Enroute-Kerala-Delights-With-Houseboat" class="btn-blue btn-red">More
+                                        Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="deals-item">
+                            <div class="deals-item-outer">
+                                <div class="deals-image">
+                                    <img src="images/home-munnar.jpg" alt="rajasthan">
+                                    <span class="deal-price"><span class="fa fa-inr fa-2x"
+                                            style="font-size: 1.5em;color:white"></span>12,000</span>
+                                </div>
+                                <div class="deal-content">
+                                    <div class="deal-rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star-o"></span>
+                                        <span class="fa fa-star-o"></span>
+                                    </div>
+                                    <h3>Enroute Kerala Escape</h3>
+                                    <p>Embark on a Journey Beyond Imagination: Enroute Kerala Escape Awaits!</p>
+                                    <a href="3-Enroute-Kerala-Escape" class="btn-blue btn-red">More Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="deals-item">
+                            <div class="deals-item-outer">
+                                <div class="deals-image">
+                                    <img src="images/kerela.jpg" alt="kerela">
+                                    <span class="deal-price"><span class="fa fa-inr fa-2x"
+                                            style="font-size: 1.5em;color:white"></span>13,000</span>
+                                </div>
+                                <div class="deal-content">
+                                    <div class="deal-rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star-o"></span>
+                                        <span class="fa fa-star-o"></span>
+                                    </div>
+                                    <h3> Kerala Escape with houseboat</h3>
+                                    <p>Relax on serene backwaters and lush landscapes in Kerala.</p>
+                                    <a href="3H-Enroute-Kerala-Escape-With-Houseboat" class="btn-blue btn-red">More
+                                        Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="deals-item">
+                            <div class="deals-item-outer">
+                                <div class="deals-image">
+                                    <img src="images/home-thiruvananthpuram-temple.jpg" alt="varanasi">
+                                    <span class="deal-price"><span class="fa fa-inr fa-2x"
+                                            style="font-size: 1.5em;color:white"></span>21,000</span>
+                                </div>
+                                <div class="deal-content">
+                                    <div class="deal-rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star-o"></span>
+                                        <span class="fa fa-star-o"></span>
+                                    </div>
+                                    <h3>Enroute Kerala Explorer</h3>
+                                    <p>Uncover the Magic: Enroute Kerala Explorer - Your Gateway to Scenic Wonders!</p>
+                                    <a href="4-Enroute-Kerala-Explorer" class="btn-blue btn-red">More Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="deals-item">
+                            <div class="deals-item-outer">
+                                <div class="deals-image">
+                                    <img src="images/home-alleppey (2).jpg" alt="jaipur">
+                                    <span class="deal-price"><span class="fa fa-inr fa-2x"
+                                            style="font-size: 1.5em;color:white"></span>22,500</span>
+                                </div>
+                                <div class="deal-content">
+                                    <div class="deal-rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star-o"></span>
+                                    </div>
+                                    <h3> Kerala Explorer With Houseboat</h3>
+                                    <p>Sail into Splendor: Enroute Kerala Explorer with Houseboat Bliss Awaits!</p>
+                                    <a href="4H-Enroute-Kerala-Explorer-With-Houseboat" class="btn-blue btn-red">More
+                                        Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="deals-item">
+                            <div class="deals-item-outer">
+                                <div class="deals-image">
+                                    <img src="images/home-thekkady.png" alt="jaipur">
+                                    <span class="deal-price"><span class="fa fa-inr fa-2x"
+                                            style="font-size: 1.5em;color:white"></span>14,000</span>
+                                </div>
+                                <div class="deal-content">
+                                    <div class="deal-rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star-o"></span>
+                                    </div>
+                                    <h3>Enroute Kerala Highlights</h3>
+                                    <p>Discover Paradise: Every Moment Unveils a New Marvel</p>
+                                    <a href="5-Enroute-Kerala-Highlights" class="btn-blue btn-red">More Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="deals-item">
+                            <div class="deals-item-outer">
+                                <div class="deals-image">
+                                    <img src="images/home-alleppey.jpg" alt="Goa">
+                                    <span class="deal-price"><span class="fa fa-inr fa-2x"
+                                            style="font-size: 1.5em;color:white"></span>16,000</span>
+                                </div>
+                                <div class="deal-content">
+                                    <div class="deal-rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star-o"></span>
+                                        <span class="fa fa-star-o"></span>
+                                    </div>
+                                    <h3> Kerala Highlights With Houseboat</h3>
+                                    <p>Discover Paradise Afloat:The Ultimate Houseboat Experience!</p>
+                                    <a href="5H-Enroute-Kerala-Houseboat-Highlights" class="btn-blue btn-red">More
+                                        Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-overlay"></div>
+    </section>
+    <!-- Deals Ends -->
+    <!-- Popular Packages -->
+    <section class="popular-packages" id="northeastEscapes">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>NORTHEASTERN ELEGANCE ESCAPES</h2>
+                <div class="section-icon">
+                    <i class="flaticon-diamond"></i>
+                </div>
+                <p>Embark on a Journey Beyond Boundaries, Where Every Step Echoes Untold Stories – Welcome to the
+                    Enchanting Northeast!</p>
+            </div>
+            <div class="row package-slider slider-button">
+                <div class="col-sm-4">
+                    <div class="package-item">
+                        <div class="package-image">
+                            <img src="images/kaziranga.jpg" alt="Image">
+                            <div class="package-price">
+                                <div class="deal-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star-o"></span>
+                                </div>
+                                <span class="fa fa-inr fa-2x" style="font-size: 1.5em;color:white"></span>
+                                <p><span>25,000</span> / <i class="fa fa-user-o" aria-hidden="true"></i> </p>
+                            </div>
+                        </div>
+                        <div class="package-content">
+                            <h3>ENROUTE MEGHALAYA & ASSAM</h3>
+                            <p class="package-days"><i class="flaticon-time"></i> 7 days</p>
+                            <p>Customisations Available</p>
+                            <p>Guwahati – Shillong – Mawlynnong – Dawki – Cherrapunji – Kaziranga</p>
+                            <div class="package-info">
+                                <a href="6-Enroute-2-Sisters" class="btn-blue btn-red">View more details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="package-item">
+                        <div class="package-image">
+                            <img src="images/umiam-shillong.jpg" alt="Image">
+                            <div class="package-price">
+                                <div class="deal-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star-o"></span>
+                                </div>
+                                <span class="fa fa-inr fa-2x" style="font-size: 1.5em;color:white"></span>
+                                <p><span>18,000</span> / <i class="fa fa-user-o" aria-hidden="true"></i> </p>
+                            </div>
+                        </div>
+                        <div class="package-content">
+                            <h3>ENROUTE MEGHALAYA ESCAPES</h3>
+                            <!-- <p>Travel| Explore | Leh |Ladakh</p> -->
+                            <p class="package-days"><i class="flaticon-time"></i> 5 days</p>
+                            <p>Customisations Available</p>
+                            <p>Guwahati – Shillong – Jowai - Mawlynnong – Dawki – Cherrapunji</p>
+                            <div class="package-info">
+                                <a href="7-Enroute-Meghalaya" class="btn-blue btn-red">View more details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="package-item">
+                        <div class="package-image">
+                            <img src="images/shillong-Cherrapunjee.jpg" alt="Image">
+                            <div class="package-price">
+                                <div class="deal-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star-o"></span>
+                                </div>
+                                <span class="fa fa-inr fa-2x" style="font-size: 1.5em;color:white"></span>
+                                <p><span>22,000</span> / <i class="fa fa-user-o" aria-hidden="true"></i> </p>
+                            </div>
+                        </div>
+                        <div class="package-content">
+                            <h3>ENROUTE MEGHALAYA & KAZIRANGA</h3>
+                            <p class="package-days"><i class="flaticon-time"></i> 6 days</p>
+                            <p>Customisations Available</p>
+                            <p>Guwahati – Shillong – Mawlynnong – Dawki – Cherrapunji – Kaziranga</p>
+                            <div class="package-info">
+                                <a href="8-Enroute-Meghalaya-Kaziranga" class="btn-blue btn-red">View more details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Popular Packages Ends -->
+    <!--* bucket*-->
+    <section id="bucket-list" class="bucket-list">
+
+        <div class="bucket-icons">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h2>Top up your Bucket List</h2>
+                    <div class="section-icon">
+                        <i class="flaticon-diamond"></i>
+                    </div>
+                    <p>Discover our diverse tour categories, tailored to your unique travel desires and interests.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="mt_filter">
+                            <ul class="list-inline text-center filter">
+                                <li class="active"><a href="#" data-filter=".domestic"><i
+                                            class="flaticon-bicycle"></i><span>Domestic</span></a></li>
+                                <li><a href="#" data-filter=".international"><i
+                                            class="flaticon-sailboat"></i><span>International</span></a></li>
+                                <li><a href="#" data-filter=".roadtrips"><i class="flaticon-wolf"></i><span>Road
+                                            Trips</span></a></li>
+                                <li><a href="#" data-filter=".treks"><i
+                                            class="flaticon-family"></i><span>Treks</span></a></li>
+                                <li><a href="#" data-filter=".dayoutings"><i class="flaticon-man-in-hike"></i><span>Day
+                                            Outings</span></a></li>
+                                <li><a href="#" data-filter=".kerala"><i class="flaticon-man-in-hike"></i><span>Kerala</span></a></li>
+                                <li><a href="#" data-filter=".northeast"><i class="flaticon-man-in-hike"></i><span>North East</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bucket-content">
+            <div class="container">
+                <div class="row isotopeContainer">
+                    <div class="col-sm-6 col-xs-12 no-padding isotopeSelector domestic">
+                        <div class="hovereffect-bucket bucket-item">
+                            <div class="bucket-image"><img src="images/rajasthan-2.jpg" alt="rajasthan"
+                                    class="img-responsive" /></div>
+                            <div class="bucket-item-content">
+                                <h3><a href="Leh-Ladakh-Delights">Rajasthan's Heritage - Jaipur to Udaipur</a></h3>
+                                <span>7 days </span><span class="old-price"> <span class="fa fa-inr"></span>6,549
+                                </span><span> <span class="fa fa-inr"></span>5,500</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 no-padding isotopeSelector domestic">
+                        <div class="hovereffect-bucket bucket-item">
+                            <div class="bucket-image"><img src="images/kerela-2.jpg" alt="kerela"
+                                    class="img-responsive" /></div>
+                            <div class="bucket-item-content">
+                                <h3><a href="#keralaEscapes">Kerala Backwaters - Kochi to Alleppey</a></h3>
+                                <span>8 days </span><span class="old-price"> <span class="fa fa-inr"></span></span>5,549
+                                </span><span> <span class="fa fa-inr"></span></span>4,459</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 no-padding isotopeSelector domestic">
+                        <div class="hovereffect-bucket bucket-item">
+                            <div class="bucket-image"><img src="images/shimla-2.jpg" alt="shimla"
+                                    class="img-responsive" /></div>
+                            <div class="bucket-item-content">
+                                <h3><a href="Leh-Ladakh-Delights">Shimla Manali - Delhi to Shimla</a></h3>
+                                <span>9 days </span><span class="old-price"> <span class="fa fa-inr"></span>7,890
+                                </span><span> <span class="fa fa-inr"></span>6,890</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 no-padding isotopeSelector domestic">
+                        <div class="hovereffect-bucket bucket-item">
+                            <div class="bucket-image"><img src="images/goa-2.jpg" alt="goa" class="img-responsive" />
+                            </div>
+                            <div class="bucket-item-content">
+                                <h3><a href="Leh-Ladakh-Delights">Serene Goa - Mumbai to Goa</a></h3>
+                                <span>4 days </span><span class="old-price"> <span class="fa fa-inr"></span>5,290
+                                </span><span> <span class="fa fa-inr"></span>4,290</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 no-padding isotopeSelector international">
+                        <div class="hovereffect-bucket bucket-item">
+                            <div class="bucket-image"><img src="images/greek-2.jpg" alt="greek"
+                                    class="img-responsive" /></div>
+                            <div class="bucket-item-content">
+                                <h3><a href="Leh-Ladakh-Delights">Greek Isles - Athens to Santorini</a></h3>
+                                <span>9 days </span><span class="old-price"> <span class="fa fa-inr"></span>35,990
+                                </span><span> <span class="fa fa-inr"></span>32,990</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-xs-12 no-padding isotopeSelector international">
+                        <div class="hovereffect-bucket bucket-item">
+                            <div class="bucket-image"><img src="images/peru-2.jpg" alt="peru" class="img-responsive" />
+                            </div>
+                            <div class="bucket-item-content">
+                                <h3><a href="Leh-Ladakh-Delights">Adventures in Peru - Lima to Machu Picchu</a></h3>
+                                <span>11 days </span><span class="old-price"> <span class="fa fa-inr"></span>41,390
+                                </span><span> <span class="fa fa-inr"></span>40,999</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-xs-12 no-padding isotopeSelector international">
+                        <div class="hovereffect-bucket bucket-item">
+                            <div class="bucket-image"><img src="images/egypt-2.jpg" alt="egypt"
+                                    class="img-responsive" /></div>
+                            <div class="bucket-item-content">
+                                <h3><a href="Leh-Ladakh-Delights">Wonders of Egypt - Cairo to Luxor</a></h3>
+                                <span>13 days </span><span class="old-price"> <span class="fa fa-inr"></span>45,999
+                                </span><span> <span class="fa fa-inr"></span>42,999</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-xs-12 no-padding isotopeSelector international">
+                        <div class="hovereffect-bucket bucket-item">
+                            <div class="bucket-image"><img src="images/japan-2.jpg" alt="japan"
+                                    class="img-responsive" /></div>
+                            <div class="bucket-item-content">
+                                <h3><a href="Leh-Ladakh-Delights">Culture in Japan - Tokyo to Kyoto</a></h3>
+                                <span>15 days </span><span class="old-price"> <span class="fa fa-inr"></span>28,890
+                                </span><span> <span class="fa fa-inr"></span>25,890</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-xs-12 no-padding isotopeSelector roadtrips">
+                        <div class="hovereffect-bucket bucket-item">
+                            <div class="bucket-image"><img src="images/himalaya-2.jpg" alt="himalaya"
+                                    class="img-responsive" /></div>
+                            <div class="bucket-item-content">
+                                <h3><a href="Leh-Ladakh-Delights">Himalayan Highs - Everest Trek, Nepal</a></h3>
+                                <span>5 days </span><span class="old-price"> <span class="fa fa-inr"></span>3,490
+                                </span><span> <span class="fa fa-inr"></span>3,190</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-xs-12 no-padding isotopeSelector  roadtrips">
+                        <div class="hovereffect-bucket bucket-item">
+                            <div class="bucket-image"><img src="images/mumbai-2.jpg" alt="mumbai"
+                                    class="img-responsive" /></div>
+                            <div class="bucket-item-content">
+                                <h3><a href="Leh-Ladakh-Delights">Mumbai Coastal Drive - Nashik to Mumbai</a></h3>
+                                <span>3 days </span><span class="old-price"> <span class="fa fa-inr"></span>4,390
+                                </span><span> <span class="fa fa-inr"></span>4,190</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-xs-12 no-padding isotopeSelector roadtrips">
+                        <div class="hovereffect-bucket bucket-item">
+                            <div class="bucket-image"><img src="images/lonavala-2.jpg" alt="lonavala"
+                                    class="img-responsive" /></div>
+                            <div class="bucket-item-content">
+                                <h3><a href="Leh-Ladakh-Delights">Lonavala Retreat - Nashik to Lonavala</a></h3>
+                                <span>4 days </span><span class="old-price"> <span class="fa fa-inr"></span>2,800
+                                </span><span> <span class="fa fa-inr"></span>2,500</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-xs-12 no-padding isotopeSelector roadtrips">
+                        <div class="hovereffect-bucket bucket-item">
+                            <div class="bucket-image"><img src="images/ganpati-2.jpg" alt="ganpati"
+                                    class="img-responsive" /></div>
+                            <div class="bucket-item-content">
+                                <h3><a href="Leh-Ladakh-Delights">Pune Expedition - Nashik to Pune</a></h3>
+                                <span>3 days </span><span class="old-price"> <span class="fa fa-inr"></span>3,890
+                                </span><span> <span class="fa fa-inr"></span>3,690</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-xs-12 no-padding isotopeSelector treks">
+                        <div class="hovereffect-bucket bucket-item">
+                            <div class="bucket-image"><img src="images/kalsubai-2.jpeg" alt="kalsubai"
+                                    class="img-responsive" /></div>
+                            <div class="bucket-item-content">
+                                <h3><a href="Leh-Ladakh-Delights">Kalsubai Peak Trek - Nashik</a></h3>
+                                <span>2 days </span><span class="old-price"> <span class="fa fa-inr"></span>2,990
+                                </span><span> <span class="fa fa-inr"></span>2,290</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-xs-12 no-padding isotopeSelector treks">
+                        <div class="hovereffect-bucket bucket-item">
+                            <div class="bucket-image"><img src="images/harishchandragad-2.jpeg" alt="harishchandragad"
+                                    class="img-responsive" /></div>
+                            <div class="bucket-item-content">
+                                <h3><a href="Leh-Ladakh-Delights">Harishchandragad Trek - Nashik</a></h3>
+                                <span>2 days </span><span class="old-price"> <span class="fa fa-inr"></span>2,590
+                                </span><span> <span class="fa fa-inr"></span>2,390</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 no-padding isotopeSelector treks">
+                        <div class="hovereffect-bucket bucket-item">
+                            <div class="bucket-image"><img src="images/sandhan-2.jpg" alt="sandhan"
+                                    class="img-responsive" /></div>
+                            <div class="bucket-item-content">
+                                <h3><a href="Leh-Ladakh-Delights">Sandhan Valley Trek - Nashik</a></h3>
+                                <span>2 days </span><span class="old-price"> <span class="fa fa-inr"></span>2,490
+                                </span><span> <span class="fa fa-inr"></span>2,090</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 no-padding isotopeSelector treks">
+                        <div class="hovereffect-bucket bucket-item">
+                            <div class="bucket-image"><img src="images/matheran-2.jpeg" alt="matheran"
+                                    class="img-responsive" /></div>
+                            <div class="bucket-item-content">
+                                <h3><a href="Leh-Ladakh-Delights">Matheran Hill Retreat - Matheran</a></h3>
+                                <span>3 days </span><span class="old-price"> <span class="fa fa-inr"></span>2,599
+                                </span><span> <span class="fa fa-inr"></span>2,399</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 no-padding isotopeSelector dayoutings">
+                        <div class="hovereffect-bucket bucket-item">
+                            <div class="bucket-image"><img src="images/sula-2.webp" alt="sula" class="img-responsive" />
+                            </div>
+                            <div class="bucket-item-content">
+                                <h3><a href="Leh-Ladakh-Delights">Sula Vineyards Experience - Nashik</a></h3>
+                                <span>1 day </span><span class="old-price"> <span class="fa fa-inr"></span>1,749
+                                </span><span> <span class="fa fa-inr"></span>1,500</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 no-padding isotopeSelector dayoutings">
+                        <div class="hovereffect-bucket bucket-item">
+                            <div class="bucket-image"><img src="images/trimbakeshwar-2.jpeg" alt="Trimbakeshwar"
+                                    class="img-responsive" /></div>
+                            <div class="bucket-item-content">
+                                <h3><a href="Leh-Ladakh-Delights">Trimbakeshwar Temple Visit - Nashik</a></h3>
+                                <span>1 day </span><span class="old-price"> <span class="fa fa-inr"></span>1,849
+                                </span><span> <span class="fa fa-inr"></span>1,590</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 no-padding isotopeSelector dayoutings">
+                        <div class="hovereffect-bucket bucket-item">
+                            <div class="bucket-image"><img src="images/pandavleni-2.webp" alt="pandavleni"
+                                    class="img-responsive" /></div>
+                            <div class="bucket-item-content">
+                                <h3><a href="Leh-Ladakh-Delights">Pandavleni Caves Exploration - Nashik</a></h3>
+                                <span>1 day </span><span class="old-price"> <span class="fa fa-inr"></span>1,849
+                                </span><span> <span class="fa fa-inr"></span>1,600</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 no-padding isotopeSelector dayoutings">
+                        <div class="hovereffect-bucket bucket-item">
+                            <div class="bucket-image"><img src="images/nashikwine-2.jpeg" alt="nashikwine"
+                                    class="img-responsive" /></div>
+                            <div class="bucket-item-content">
+                                <h3><a href="Leh-Ladakh-Delights">Nashik Wine Trail - Nashik</a></h3>
+                                <span>1 day </span><span class="old-price"> <span class="fa fa-inr"></span>1,949
+                                </span><span> <span class="fa fa-inr"></span>1,690</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- KERALA -->
+                    <div class="col-sm-6 col-xs-12 no-padding isotopeSelector kerala">
+                        <div class="hovereffect-bucket bucket-item">
+                            <div class="bucket-image"><img src="images/home-kerela-main.jpg" alt="nashikwine"
+                                    class="img-responsive" /></div>
+                            <div class="bucket-item-content">
+                                <h3><a href="2-Enroute-Kerala-Delights">Enroute Kerala Delights</a></h3>
+                                <span>7 days </span><span class="old-price"> 
+                                </span><span> <span class="fa fa-inr"></span>18,500</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 no-padding isotopeSelector kerala">
+                        <div class="hovereffect-bucket bucket-item">
+                            <div class="bucket-image"><img src="images/home-munnar.jpg" alt="nashikwine"
+                                    class="img-responsive" /></div>
+                            <div class="bucket-item-content">
+                                <h3><a href="3-Enroute-Kerala-Escape">Enroute Kerala Escape</a></h3>
+                                <span>5 days </span><span class="old-price"> 
+                                </span><span> <span class="fa fa-inr"></span>12,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 no-padding isotopeSelector kerala">
+                        <div class="hovereffect-bucket bucket-item">
+                            <div class="bucket-image"><img src="images/home-thiruvananthpuram-temple.jpg" alt="nashikwine"
+                                    class="img-responsive" /></div>
+                            <div class="bucket-item-content">
+                                <h3><a href="4-Enroute-Kerala-Explorer">Enroute Kerala Explorer</a></h3>
+                                <span>8 days </span><span class="old-price"> 
+                                </span><span> <span class="fa fa-inr"></span>21,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 no-padding isotopeSelector kerala">
+                        <div class="hovereffect-bucket bucket-item">
+                            <div class="bucket-image"><img src="images/home-thekkady.png" alt="nashikwine"
+                                    class="img-responsive" /></div>
+                            <div class="bucket-item-content">
+                                <h3><a href="5-Enroute-Kerala-Highlights">Enroute Kerala Highlights</a></h3>
+                                <span>6 days </span><span class="old-price"> 
+                                </span><span> <span class="fa fa-inr"></span>14,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- NORTH EAST -->
+                    <div class="col-sm-6 col-xs-12 no-padding isotopeSelector northeast">
+                        <div class="hovereffect-bucket bucket-item">
+                            <div class="bucket-image"><img src="images/kaziranga.jpg" alt="nashikwine"
+                                    class="img-responsive" /></div>
+                            <div class="bucket-item-content">
+                                <h3><a href="6-Enroute-2-Sisters">Enroute Meghalaya & Assam</a></h3>
+                                <span>7 days </span><span class="old-price"> 
+                                </span><span> <span class="fa fa-inr"></span>22,500</span>
+                            </div>
+                        </div>
+                    </div>   <div class="col-sm-6 col-xs-12 no-padding isotopeSelector northeast">
+                        <div class="hovereffect-bucket bucket-item">
+                            <div class="bucket-image"><img src="images/shillong-Cherrapunjee.jpg" alt="nashikwine"
+                                    class="img-responsive" /></div>
+                            <div class="bucket-item-content">
+                                <h3><a href="7-Enroute-Meghalaya">Enroute Meghalaya Escape</a></h3>
+                                <span>5 days </span><span class="old-price"> 
+                                </span><span> <span class="fa fa-inr"></span>18,000</span>
+                            </div>
+                        </div>
+                    </div>   <div class="col-sm-6 col-xs-12 no-padding isotopeSelector northeast">
+                        <div class="hovereffect-bucket bucket-item">
+                            <div class="bucket-image"><img src="images/jowai.jpg" alt="nashikwine"
+                                    class="img-responsive" /></div>
+                            <div class="bucket-item-content">
+                                <h3><a href="8-Enroute-Meghalaya-Kaziranga">Enroute Meghalaya & Kaziranga</a></h3>
+                                <span>6 days </span><span class="old-price"> 
+                                </span><span> <span class="fa fa-inr"></span>22,000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-overlay"></div>
+            </div>
+        </div>
+    </section>
+    <!--* End bucket*-->
+
+    <!-- Top Destinations -->
+    <section class="top-destinations">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Top Destinations</h2>
+                <div class="section-icon">
+                    <i class="flaticon-diamond"></i>
+                </div>
+                <p>Discover India's Treasures: Explore Iconic Destinations from Majestic Himachal to Exotic Andaman
+                    Islands.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-xs-4">
+                    <div class="top-destination-item">
+                        <img class="img-responsive" src="images/gir-3.webp" alt="Image">
+                        <div class="overlay">
+                            <h2><a href="Leh-Ladakh-Delights">Gir Forest</a></h2>
+                            <p>Home to majestic Asiatic lions.</p>
+                        </div>
+                    </div>
+                    <div class="top-destination-item">
+                        <img class="img-responsive" src="images/amerfort-3.jpg" alt="Image">
+                        <div class="overlay">
+                            <h2><a href="Leh-Ladakh-Delights">Jaipur's Amer Fort</a></h2>
+                            <p>Majestic hilltop fortress palace.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-4">
+                    <div class="top-destination-item destination-margin">
+                        <img class="img-responsive" src="images/tajmahal-3.jpg" alt="Image">
+                        <div class="overlay overlay-full">
+                            <h2><a href="Leh-Ladakh-Delights">Taj Mahal</a></h2>
+                            <p>Iconic symbol of eternal love.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-4">
+                    <div class="top-destination-item">
+                        <img class="img-responsive" src="images/manali.jpg" alt="Image">
+                        <div class="overlay">
+                            <h2><a href="Leh-Ladakh-Delights">Manali</a></h2>
+                            <p>Scenic Himalayan hill station retreat.</p>
+                        </div>
+                    </div>
+                    <div class="top-destination-item">
+                        <img class="img-responsive" src="images/andaman-31.jpg" alt="Image">
+                        <div class="overlay">
+                            <h2><a href="Leh-Ladakh-Delights">Andaman Islands</a></h2>
+                            <p>Pristine beaches, vibrant marine life.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Top Destination Ends -->
+
+    <!-- Trip Ad -->
+    <section class="trip-ad">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+
+                    <div class="trip-ad-content">
+                        <div class="ad-title">
+                            <h2>Explore The <span>Thailand Trip</span></h2>
+                        </div>
+                        <p>Experience the enchanting wonders of Thailand through our carefully curated Thailand Trip.
+                            Discover
+                            the mesmerizing beauty of Thailand's pristine beaches, lush jungles, and vibrant cities.
+                            Visit iconic
+                            temples like Wat Pho and explore bustling street markets. Savor the world-famous Thai
+                            cuisine, known
+                            for its exquisite flavors.</p>
+                        <p>Immerse yourself in the rich culture, tradition, and warm hospitality that Thailand
+                            is renowned for.</p>
+                        <p> Book your journey to this exotic paradise now!</p>
+                        <div class="trip-ad-btn">
+                            <a href="Leh-Ladakh-Delights" class="btn-blue btn-red">BOOK NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <div class="ad-price">
+                        <div class="ad-price-inner">
+                            <span>Starting at <span class="rate"><span class="fa fa-inr fa-2x"
+                                        style="font-size: 1.5em;color:white"></span>43,900</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Trip Ad Ends -->
+
+    <!-- Deals On Sale -->
+    <section class="deals-on-sale">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Uncover Hidden Gems</h2>
+                <div class="section-icon">
+                    <i class="flaticon-diamond"></i>
+                </div>
+                <p>Venture into the world's hidden treasures, where authentic experiences await your exploration.</p>
+            </div>
+            <div class="row sale-slider slider-button">
+
+                <div class="col-md-12">
+                    <div class="sale-item">
+                        <div class="sale-image">
+                            <img src="images/bhedaghat-51.jpeg" alt="Image">
+                        </div>
+                        <div class="sale-content">
+                            <div class="sale-review">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <h3><a href="Leh-Ladakh-Delights">Bhedaghat, Madhya Pradesh</a></h3>
+                            <p><i class="flaticon-time"></i> 4 days</p>
+                            <p>Witness the stunning marble rocks on the Narmada River, often called the Grand Canyon of
+                                India.</p>
+                            <a href="Leh-Ladakh-Delights" class="btn-blue btn-red">View More</a>
+                        </div>
+                        <div class="sale-tag">
+                            <span class="old-price"><span class="fa fa-inr"></span>8,349</span>
+
+                        </div>
+                        <div class="sale-overlay"></div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="sale-item">
+                        <div class="sale-image">
+                            <img src="images/gokarna-51.webp" alt="Image">
+                        </div>
+                        <div class="sale-content">
+                            <div class="sale-review">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <h3><a href="Leh-Ladakh-Delights">Gokarna, Karnataka</a></h3>
+                            <p><i class="flaticon-time"></i> 4 days</p>
+                            <p>A peaceful beach town with pristine beaches, it's often called the 'new Goa.'</p>
+                            <a href="Leh-Ladakh-Delights" class="btn-blue btn-red">View More</a>
+                        </div>
+                        <div class="sale-tag">
+                            <span class="old-price"><span class="fa fa-inr"></span>9,249</span>
+
+                        </div>
+                        <div class="sale-overlay"></div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="sale-item">
+                        <div class="sale-image">
+                            <img src="images/dhanushkodi-51.webp" alt="Image">
+                        </div>
+                        <div class="sale-content">
+                            <div class="sale-review">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <h3><a href="Leh-Ladakh-Delights">Dhanushkodi, Tamil Nadu</a></h3>
+                            <p><i class="flaticon-time"></i> 5 days</p>
+                            <p>A ghost town with scenic beaches, ruins, and the point where the Indian Ocean meets the
+                                Bay of Bengal.</p>
+                            <a href="Leh-Ladakh-Delights" class="btn-blue btn-red">View More</a>
+                        </div>
+                        <div class="sale-tag">
+                            <span class="old-price"><span class="fa fa-inr"></span>7,649</span>
+
+                        </div>
+                        <div class="sale-overlay"></div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="sale-item">
+                        <div class="sale-image">
+                            <img src="images/patnitop-51.webp" alt="Image">
+                        </div>
+                        <div class="sale-content">
+                            <div class="sale-review">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <h3><a href="Leh-Ladakh-Delights">Patnitop, Jammu & Kashmir</a></h3>
+                            <p><i class="flaticon-time"></i> 4 days</p>
+                            <p>A serene hill station with meadows, forests, and adventure activities.</p>
+                            <a href="Leh-Ladakh-Delights" class="btn-blue btn-red">View More</a>
+                        </div>
+                        <div class="sale-tag">
+                            <span class="old-price"><span class="fa fa-inr"></span>8,949</span>
+
+                        </div>
+                        <div class="sale-overlay"></div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="sale-item">
+                        <div class="sale-image">
+                            <img src="images/gangtok-51.png" alt="Image">
+                        </div>
+                        <div class="sale-content">
+                            <div class="sale-review">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <h3><a href="Leh-Ladakh-Delights">Gangtok, Sikkim</a></h3>
+                            <p><i class="flaticon-time"></i> 3 days</p>
+                            <p>A charming hill station with monasteries, stunning views, and a serene ambiance.</p>
+                            <a href="Leh-Ladakh-Delights" class="btn-blue btn-red">View More</a>
+                        </div>
+                        <div class="sale-tag">
+                            <span class="old-price"><span class="fa fa-inr"></span>6,749</span>
+
+                        </div>
+                        <div class="sale-overlay"></div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="sale-item">
+                        <div class="sale-image">
+                            <img src="images/bhuj-51.jpeg" alt="Image">
+                        </div>
+                        <div class="sale-content">
+                            <div class="sale-review">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <h3><a href="Leh-Ladakh-Delights">Bhuj, Gujarat</a></h3>
+                            <p><i class="flaticon-time"></i> 5 days</p>
+                            <p>Experience the rich handicrafts, vibrant markets, and the stunning White Desert of Kutch.
+                            </p>
+                            <a href="Leh-Ladakh-Delights" class="btn-blue btn-red">View More</a>
+                        </div>
+                        <div class="sale-tag">
+                            <span class="old-price"><span class="fa fa-inr"></span>8,549</span>
+
+                        </div>
+                        <div class="sale-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Deals On Sale Ends -->
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="section-title text-center">
+            <h2>Best Rated Travel Agency</h2>
+            <div class="section-icon section-icon-white">
+                <i class="flaticon-diamond"></i>
+            </div>
+        </div>
+        <!-- Paradise Slider -->
+        <div id="testimonial_094"
+            class="carousel slide testimonial_094_indicators thumb_scroll_x swipe_x ps_easeOutSine" data-ride="carousel"
+            data-pause="hover" data-interval="3000" data-duration="1000">
+
+
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#testimonial_094" data-slide-to="0" class="active">
+                    <img src="images/saishDada.jpg" alt="testimonial_094_01"> <!-- 1st Image -->
+                </li>
+                <li data-target="#testimonial_094" data-slide-to="1">
+                    <img src="images/akshayDada.jpg" alt="testimonial_094_02"> <!-- 2nd Image -->
+                </li>
+                <li data-target="#testimonial_094" data-slide-to="2">
+                    <img src="images/soniDidi.jpg" alt="testimonial_094_03"> <!-- 3rd Image -->
+                </li>
+                <li data-target="#testimonial_094" data-slide-to="3">
+                    <img src="images/shivam.jpg" alt="testimonial_094_04"> <!-- 4th Image -->
+                </li>
+                <li data-target="#testimonial_094" data-slide-to="4">
+                    <img src="images/shubham.jpg" alt="testimonial_094_05"> <!-- 5th Image -->
+                </li>
+                <li data-target="#testimonial_094" data-slide-to="5">
+                    <img src="images/pooja.jpg" alt="testimonial_094_05"> <!-- 5th Image -->
+                </li>
+                <li data-target="#testimonial_094" data-slide-to="6">
+                    <img src="images/suchit.jpg" alt="testimonial_094_05"> <!-- 5th Image -->
+                </li>
+            </ol>
+
+            <!-- Wrapper For Slides -->
+            <div class="carousel-inner" role="listbox">
+
+                <!-- First Slide -->
+                <div class="item active">
+                    <!-- Text Layer -->
+                    <div class="testimonial_094_slide">
+                        <p class="font18">If I could give them 6 stars I would. The communication was excellent and the
+                            services provided were exactly as promised.
+                            Shivam absolutely saved my holiday after another
+                            agency cancelled things last minute. He was so amazingly helpful and friendly, and went the
+                            extra mile for us without us having to ask. Thank you Shivam and Enroute to help me
+                            throught!</p>
+                        <div class="deal-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <h5><a href="#">Saish Ikhankar</a></h5>
+                    </div> <!-- /Text Layer -->
+                </div> <!-- /item -->
+                <!-- End of First Slide -->
+
+                <!-- Second Slide -->
+                <div class="item">
+                    <!-- Text Layer -->
+                    <div class="testimonial_094_slide">
+                        <p class="font18"> This is definitely the best travel agency I have
+                            Travelled with anywhere in the world. I would recommend anyone Going in Leh to choose them
+                            for planning their trip.They are wonderful!</p>
+                        <div class="deal-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-o"></span>
+                        </div>
+                        <h5><a href="#">Akshay Ikhankar</a></h5>
+                    </div> <!-- /Text Layer -->
+                </div> <!-- /item -->
+                <!-- End of Second Slide -->
+
+                <!-- Third Slide -->
+                <div class="item">
+                    <!-- Text Layer -->
+                    <div class="testimonial_094_slide">
+                        <p class="font18">Everything went really smooth and we had almost no issues during the different
+                            stages of the
+                            travel. The people at
+                            Enroute were reachable within minutes and the required changes were done
+                            quickly and in a professional way. I will always Enroute,s Travel Plans.</p>
+                        <div class="deal-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-o"></span>
+                        </div>
+                        <h5><a href="#">Snehal Kharote</a></h5>
+                    </div> <!-- /Text Layer -->
+                </div> <!-- /item -->
+                <!-- End of Third Slide -->
+
+                <!-- Fourth Slide -->
+                <div class="item">
+                    <!-- Text Layer -->
+                    <div class="testimonial_094_slide">
+                        <p class="font18">Excellent Trip!!! 15 of us have just completed a 10 day Ladakh private trip
+                            with
+                            Enroute. Their service is reliable, professional and friendly. We booked our
+                            trip months back with a 30% deposit. When we arrived Ladakh, Unexplored Trip fulfilled every
+                            detail as stated in the agreed itinerary .The tour guides and driver provided are friendly,
+                            knowledgable, ptofessional and caring. Thumns Up.</p>
+                        <div class="deal-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <h5><a href="#">Shivam Rajapurkar</a></h5>
+                    </div> <!-- /Text Layer -->
+                </div> <!-- /item -->
+                <!-- End of Fourth Slide -->
+
+                <!-- Fifth Slide -->
+                <div class="item">
+                    <!-- Text Layer -->
+                    <div class="testimonial_094_slide">
+                        <p class="font18">The trip planned and executed was near perfect. We had an absolutely fantastic
+                            experience with
+                            Enroute travel agency and wanted to take a moment to highlight the exceptional
+                            customer service we received from Shivam who went above and beyond to make sure our trip
+                            from Leh and Ladakh was a success.</p>
+                        <div class="deal-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <h5><a href="#">Shubham Pingle</a></h5>
+                    </div> <!-- /Text Layer -->
+                </div> <!-- /item -->
+                <!-- End of Fifth Slide -->
+
+                <!-- Sixth Slide -->
+                <div class="item">
+                    <!-- Text Layer -->
+                    <div class="testimonial_094_slide">
+                        <p class="font18">It's a very good trip special thanks to Enroute to arrange such a
+                            beautiful tour for us. Their service is excellent from booking till end of the
+                            tour. Trip was value for money. Driver was gentle in nature, Hotel had good
+                            aesthetic and food was very good .</p>
+                        <div class="deal-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-o"></span>
+                        </div>
+                        <h5><a href="#">Pooja Rajapurkar</a></h5>
+                    </div> <!-- /Text Layer -->
+                </div> <!-- /item -->
+                <!-- End of Sixth Slide -->
+
+                <!-- Seventh Slide -->
+                <div class="item">
+                    <!-- Text Layer -->
+                    <div class="testimonial_094_slide">
+                        <p class="font18">Amazing trip organised by Enroute!!! Special shout-out to their team for
+                            handling
+                            literally everything and making us feel at home in a whole new atmosphere.Totally loved the
+                            hospitality of the team and the way they handled my entire trip was so comforting...i
+                            travelled
+                            with my parents and they had a absolute hassle free experience.</p>
+                        <div class="deal-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-o"></span>
+                        </div>
+                        <h5><a href="#">Suchit Dusane</a></h5>
+                    </div> <!-- /Text Layer -->
+                </div> <!-- /item -->
+                <!-- End of Seventh Slide -->
+            </div> <!-- End of Wrapper For Slides -->
+        </div> <!-- End Paradise Slider -->
+    </section>
+    <!-- Testimonials -->
+
+    <!-- Countdown -->
+    <section class="countdown-section">
+        <div class="container">
+            <div class="countdown-title">
+                <h2>We provide Quality & Budgeted travel services all over the <span>India</span> and
+                    <span>Abroad</span>
+                    <i class="fa fa-plane" style="color: white;"></i>
+                </h2>
+                <p>It’s limited seating! Hurry up</p>
+            </div>
+            <div class="countdown countdown-container container">
+                <p id="demo"></p>
+            </div><!-- /.countdown-wrapper -->
+        </div>
+        <div class="testimonial-overlay"></div>
+    </section>
+    <!-- Countdown Ends -->
+
+    <!-- Blog -->
+    <section class="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title text-center">
+                        <h2>Tour Diaries</h2>
+                        <div class="section-icon">
+                            <i class="flaticon-diamond"></i>
+                        </div>
+                        <p>Real stories from our Explorers, sharing their adventures, discoveries, and unforgettable
+                            moments with us.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="blog-item">
+                        <div class="blog-image">
+                            <img src="images/jaipurTourist-6.jpg" alt="Image">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date">
+                                <p><i class="fa fa-clock-o"></i> Posted On : 12 August</p>
+                            </div>
+                            <h3><a href="#">Perfect Family Trip!</a></h3>
+                            <p>Thanks to your expert planning, our family trip was a flawless blend of adventure,
+                                relaxation, and quality time together. From Jaipur's cultural immersion to the Himalayan
+                                trek's thrill and Goa's coastal bliss, every moment was magical.</p>
+                            <div class="blog-author">
+                                <div class="pull-left">
+                                    <p><a href="#"><i class="fa fa-user-o" aria-hidden="true"></i> Vaibhav</a></p>
+                                </div>
+                                <div class="pull-right blog-date-icon">
+                                    <p><i class="fa fa-eye" aria-hidden="true"></i> 32</p>
+                                    <p><i class="fa fa-heart" aria-hidden="true"></i> 4</p>
+                                    <p><i class="fa fa-comment-o" aria-hidden="true"></i> 1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="blog-item">
+                        <div class="blog-image">
+                            <img src="images/rajasthanTourist-6.jpg" alt="Image">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date">
+                                <p><i class="fa fa-clock-o"></i> Posted On : 18 June</p>
+                            </div>
+                            <h3><a href="#">Loved Exploring Rajasthan!</a></h3>
+                            <p>Our Rajasthan heritage tour, thoughtfully arranged by your company, was a captivating
+                                exploration of palaces and forts. Each day unfolded with grandeur, from the opulence of
+                                Udaipur's City Palace to the historical charm of Jaipur's Amber Fort.</p>
+                            <div class="blog-author">
+                                <div class="pull-left">
+                                    <p><a href="#"><i class="fa fa-user-o" aria-hidden="true"></i> Parimal</a></p>
+                                </div>
+                                <div class="pull-right blog-date-icon">
+                                    <p><i class="fa fa-eye" aria-hidden="true"></i> 24</p>
+                                    <p><i class="fa fa-heart" aria-hidden="true"></i> 5</p>
+                                    <p><i class="fa fa-comment-o" aria-hidden="true"></i> 0</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="blog-item">
+                        <div class="blog-image">
+                            <img src="images/goaTourist-6.jpg" alt="Image">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date">
+                                <p><i class="fa fa-clock-o"></i> Posted On : 22 July</p>
+                            </div>
+                            <h3><a href="#">Fantastic experience! Highly recommend.</a></h3>
+                            <p>Our Goa getaway was a romantic dream. We walked hand in hand on sandy beaches, enjoyed
+                                starlit cocktails, danced by the ocean's gentle tune, fell in love all over again
+                                makking memories to last for lifetime."</p>
+                            <div class="blog-author">
+                                <div class="pull-left">
+                                    <p><a href="#"><i class="fa fa-user-o" aria-hidden="true"></i> Aditya</a></p>
+                                </div>
+                                <div class="pull-right blog-date-icon">
+                                    <p><i class="fa fa-eye" aria-hidden="true"></i> 28</p>
+                                    <p><i class="fa fa-heart" aria-hidden="true"></i> 8</p>
+                                    <p><i class="fa fa-comment-o" aria-hidden="true"></i> 2</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Ends -->
+
+    <!-- Trusted Partners -->
+    <!-- <section class="trusted-partners">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-xs-4">
+                    <div class="partners-title">
+                        <h3>Our <span>Partners</span></h3>
+                    </div>
+                </div>
+                <div class="col-md-9 col-xs-8">
+                    <ul class="partners-logo partners-slider">
+                        <li><a href="#"><img src="images/partner1.png" alt="Image"></a></li>
+                        <li><a href="#"><img src="images/partner2.png" alt="Image"></a></li>
+                        <li><a href="#"><img src="images/partner3.png" alt="Image"></a></li>
+                        <li><a href="#"><img src="images/partner4.png" alt="Image"></a></li>
+                        <li><a href="#"><img src="images/partner5.png" alt="Image"></a></li>
+                        <li><a href="#"><img src="images/partner6.png" alt="Image"></a></li>
+                        <li><a href="#"><img src="images/partner1.png" alt="Image"></a></li>
+                        <li><a href="#"><img src="images/partner2.png" alt="Image"></a></li>
+                        <li><a href="#"><img src="images/partner3.png" alt="Image"></a></li>
+                        <li><a href="#"><img src="images/partner4.png" alt="Image"></a></li>
+                        <li><a href="#"><img src="images/partner5.png" alt="Image"></a></li>
+                        <li><a href="#"><img src="images/partner6.png" alt="Image"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Trusted Partners Ends -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-upper">
+            <div class="container">
+                <div class="newsletter text-center">
+                    <div class="section-title section-title-white text-center">
+                        <h2>Subscribe Now</h2>
+                        <div class="section-icon section-icon-white">
+                            <i class="flaticon-diamond"></i>
+                        </div>
+                        <p>Never Miss an Adventure: Subscribe for Upcoming Tour Updates!</p>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Enter Your Email" class="form-control" id="search">
+                            <a class="subscribe" href="#"><span class="search_btn"><i class="fa fa-paper-plane"
+                                        aria-hidden="true"></i>
+                                    Subscribe</span></a>
+                        </div>
+                    </form>
+                </div>
+                <div class="footer-links">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-12">
+                            <div class="footer-about footer-margin">
+                                <div class="about-logo">
+                                    <img style="width: 180px;" src="images/ogLogoEnroute.jpg" alt="Image">
+                                </div>
+                                <p>Enroute - Explore the Journeys.</p>
+                                <div class="about-location">
+                                    <ul>
+                                        <li><i class="fa fa-building"></i> Nashik</li>
+                                        <li><i class="fa fa-phone"></i> <a style="color: white !important;"
+                                                href="tel:7447557691"> (091)-7447557691</a></li>
+                                        <li><i class="fa fa-envelope"></i> <a style="color: white !important;"
+                                                href="mailto:shivam@enroute-tours.com">shivam@enroute-tours.com</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-social-links">
+                                    <ul>
+                                        <li class="social-icon"><a href="#"><i class="fa fa-facebook"
+                                                    aria-hidden="true"></i></a></li>
+                                        <li class="social-icon"><a target="_blank"
+                                                href="https://instagram.com/enroute_explorers?igshid=MzRlODBiNWFlZA=="><i
+                                                    class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                        <li class="social-icon"><a href="#"><i class="fa fa-twitter"
+                                                    aria-hidden="true"></i></a></li>
+                                        <li class="social-icon"><a href="#"><i class="fa fa-youtube"
+                                                    aria-hidden="true"></i></a></li>
+                                        <li class="social-icon"><a href="#"><i class="fa fa-google"
+                                                    aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="footer-links-list footer-margin">
+                                <h3>Browse Tour</h3>
+                                <ul>
+                                    <li><a href="Leh-Ladakh-Delights">Goa Beach Bliss <i class="fa fa-angle-right"
+                                                aria-hidden="true"></i></a>
+                                    </li>
+                                    <li><a href="Leh-Ladakh-Delights">Ladakh Delight <i class="fa fa-angle-right"
+                                                aria-hidden="true"></i></a></li>
+                                    <li><a href="Leh-Ladakh-Delights">Spiritual Varanasi <i class="fa fa-angle-right"
+                                                aria-hidden="true"></i></a>
+                                    </li>
+                                    <li><a href="Leh-Ladakh-Delights">Ladakh Highlights <i class="fa fa-angle-right"
+                                                aria-hidden="true"></i></a></li>
+                                    <li><a href="Leh-Ladakh-Delights">Royal Rajasthan <i class="fa fa-angle-right"
+                                                aria-hidden="true"></i></a></li>
+                                    <li><a href="Leh-Ladakh-Delights">Cultural Jaipur <i class="fa fa-angle-right"
+                                                aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="footer-recent-post footer-margin">
+                                <h3>Recent Posts</h3>
+                                <ul>
+                                    <li>
+                                        <div class="recent-post-item">
+                                            <div class="recent-post-image">
+                                                <img src="images/jaipurTourist-6.jpg" alt="Image">
+                                            </div>
+                                            <div class="recent-post-content">
+                                                <h4><a href="#">Perfect Family Trip!</a></h4>
+                                                <p>June 17, 2018</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="recent-post-item">
+                                            <div class="recent-post-image">
+                                                <img src="images/rajasthanTourist-6.jpg" alt="Image">
+                                            </div>
+                                            <div class="recent-post-content">
+                                                <h4><a href="#">Exploring Rajasthan!</a></h4>
+                                                <p>Sept 23, 2023</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="recent-post-item">
+                                            <div class="recent-post-image">
+                                                <img src="images/goaTourist-6.jpg" alt="Image">
+                                            </div>
+                                            <div class="recent-post-content">
+                                                <h4><a href="#">Fantastic Experience!</a></h4>
+                                                <p>Sept 24, 2023</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4">
+                            <div class="footer-links-list">
+                                <div class="footer-instagram">
+                                    <h3>Instagram</h3>
+                                    <ul>
+                                        <li><img src="images/insta1.jpg" alt="Image"></li>
+                                        <li><img src="images/insta2.jpg" alt="Image"></li>
+                                        <li><img src="images/insta3.jpg" alt="Image"></li>
+                                        <li><img src="images/insta4.jpg" alt="Image"></li>
+                                        <li><img src="images/insta5.jpg" alt="Image"></li>
+                                        <li><img src="images/insta6.jpg" alt="Image"></li>
+                                        <li><img src="images/insta7.jpg" alt="Image"></li>
+                                        <li><img src="images/insta8.jpg" alt="Image"></li>
+                                        <li><img src="images/insta9.jpg" alt="Image"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="copyright-content">
+                            <p>2023 <i class="fa fa-copyright" aria-hidden="true"></i> Designed and Developed by <a
+                                    href="https://instagram.com/shubham.pingle?igshid=OGQ5ZDc2ODk2ZA=="
+                                    target="_blank">Shubham Pingle</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="payment-content">
+                            <ul>
+                                <li>We Accept</li>
+                                <li>
+                                    <img src="images/payment1.png" alt="Image">
+                                </li>
+                                <li>
+                                    <img src="images/payment2.png" alt="Image">
+                                </li>
+                                <li>
+                                    <img src="images/payment3.png" alt="Image">
+                                </li>
+                                <li>
+                                    <img src="images/payment4.png" alt="Image">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Ends -->
+
+    <!-- Back to top start -->
+    <div id="back-to-top">
+        <a href="#"></a>
+    </div>
+    <!-- Back to top ends -->
+
+    <!-- *Scripts* -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/main-1.js"></script>
+    <script src="js/preloader.js"></script>
+    <script src="js/custom-swiper2.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Function to validate the email format
+            function isValidEmail(email) {
+                var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+                return emailPattern.test(email);
+            }
+
+            $("#search").on("blur", function () {
+                var subscribeEmailValidate = $(this).val();
+                if (!isValidEmail(subscribeEmailValidate)) {
+                    $("#search").val('');
+                    alert("Please enter a valid email address.");
+                }
+            });
+
+            $(".subscribe").click(function (event) {
+                event.preventDefault(); // Prevent the default form submission
+                // Gather data from form fields
+                var subscribeEmail = $("#search").val();
+
+
+                console.log(subscribeEmail);
+                // Check if any of the required fields are empty
+                if (!subscribeEmail) {
+                    alert("Please enter your email to subscribe");
+                    return;
+                }
+                $(".subscribe").text("Please wait...");
+                // Create a JSON object with the form data
+                var formData = {
+                    email: subscribeEmail
+                };
+                $("#search").val('');
+                // Send a POST request to your API
+                $.ajax({
+                    url: 'http://64.227.188.161:3000/subscribe',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify(formData),
+                    success: function (response) {
+                        // Handle the API response here (e.g., show a success message)
+                        console.log('API Response:', response);
+
+                        // Show a success modal
+                        $('#successModal2').modal('show');
+                        $("#search").val('');
+                        $(".subscribe").html(`<span class="search_btn"><i class="fa fa-paper-plane"
+                                        aria-hidden="true"></i>
+                                    Subscribe</span>`);
+                    },
+                    error: function (error) {
+                        // Handle any errors from the API request
+                        console.error('API Error:', error);
+                        $(".subscribe").html(`<span class="search_btn"><i class="fa fa-paper-plane"
+                                        aria-hidden="true"></i>
+                                    Subscribe</span>`);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
